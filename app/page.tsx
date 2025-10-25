@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';
+import React, {ChangeEvent, FormEvent} from 'react';
 
 
 export default function Portfolio() {
@@ -13,7 +13,7 @@ export default function Portfolio() {
     },
   ];
 
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = async (event: ChangeEvent<HTMLFormElement>) => {
     event.preventDefault()
     const formData = new FormData(event.target);
     await fetch("/__forms.html", {
