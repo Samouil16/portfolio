@@ -142,7 +142,7 @@ export default function Portfolio() {
 
               <div className="mt-6">
                 <form name="feedback" className="grid grid-cols-1 md:grid-cols-2 gap-3" onSubmit={handleFormSubmit}>
-                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="form-name" value="feedback" />
                   <input className="border rounded-lg p-3" name="name" placeholder="Your name" required />
                   <input className="border rounded-lg p-3" name="email" placeholder="Your email" type="email" required />
                   <textarea className="border rounded-lg p-3 md:col-span-2" name="message" placeholder="Message" rows={4} required />
