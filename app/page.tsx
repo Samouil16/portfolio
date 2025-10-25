@@ -13,6 +13,16 @@ export default function Portfolio() {
     },
   ];
 
+  const handleFormSubmit = async (event) => {
+    event.preventDefault()
+    const formData = new FormData(event.target);
+    await fetch("/__forms.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    });
+  }
+
   return (
       <div className="min-h-screen bg-slate-50 text-slate-800">
         <header className="max-w-5xl mx-auto px-6 py-10 flex items-center justify-between">
@@ -131,7 +141,7 @@ export default function Portfolio() {
               </div>
 
               <div className="mt-6">
-                <form name="contact" method="POST" data-netlify="true" className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <form name="feedback" className="grid grid-cols-1 md:grid-cols-2 gap-3" onSubmit={handleFormSubmit}>
                   <input type="hidden" name="form-name" value="contact" />
                   <input className="border rounded-lg p-3" name="name" placeholder="Your name" required />
                   <input className="border rounded-lg p-3" name="email" placeholder="Your email" type="email" required />
