@@ -133,7 +133,6 @@ export default function Portfolio() {
           <section id="contact" className="mt-12">
             <h3 className="text-xl font-bold mb-4">Get in touch</h3>
             <div className="bg-white p-6 rounded-2xl shadow-sm">
-              <p className="text-sm text-slate-600">Available for full-time roles and interesting freelance projects. If you want to collaborate, hire me, or view the full CV, reach out below.</p>
               <div className="mt-4 flex gap-3">
                 <a href="mailto:samouilpratziotis@gmail.com" className="px-4 py-2 rounded-lg border">Email me</a>
                 <a href="https://www.linkedin.com/in/samouil-pratzioti-a4b925178" target="_blank" rel="noreferrer" className="px-4 py-2 rounded-lg bg-slate-800 text-white">LinkedIn</a>
