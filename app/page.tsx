@@ -28,7 +28,7 @@ export default function Portfolio() {
         <header className="max-w-5xl mx-auto px-6 py-10 flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold">Samouil Pratzioti</h1>
-            <p className="text-sm text-slate-600">Software Developer</p>
+            <p className="text-sm text-slate-600">Mid Level Software Developer</p>
           </div>
           <nav className="space-x-4">
             <a href="#projects" className="text-sm hover:underline">Projects</a>
@@ -88,7 +88,7 @@ export default function Portfolio() {
               <div className="bg-white p-6 rounded-2xl shadow-sm">
                 <div className="flex justify-between items-start">
                   <div>
-                    <h4 className="font-semibold">Software Developer — HF Markets</h4>
+                    <h4 className="font-semibold">Mid Level Software Developer — HF Markets</h4>
                     <p className="text-xs text-slate-500">August 2024 — Present</p>
                   </div>
                   <p className="text-xs text-slate-500">Payments team</p>
